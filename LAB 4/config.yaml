@@ -1,0 +1,18 @@
+dataset:
+  name: Wine Quality
+  source: UCI Machine Learning Repository
+
+  files:
+    red:   winequality-red.csv
+    white: winequality-white.csv
+
+  search_paths:
+    - .
+    - ./data
+    - ./dataset
+    - ~/datasets/wine_quality
+
+  download:
+    enabled: true
+    base_url: https://archive.ics.uci.edu/ml/machine-learning-databases/wine-quality/
+    save_to:  ./data
